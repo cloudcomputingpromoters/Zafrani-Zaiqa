@@ -1,0 +1,198 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <defs>
+    <!-- Warm saffron-brown background gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#2A1200"/>
+      <stop offset="40%"  stop-color="#4A2000"/>
+      <stop offset="100%" stop-color="#6B3800"/>
+    </linearGradient>
+    <!-- Saffron glow in center -->
+    <radialGradient id="centreGlow" cx="50%" cy="60%" r="45%">
+      <stop offset="0%"   stop-color="#C8860A" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </radialGradient>
+    <!-- Cup gradient -->
+    <linearGradient id="cupGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#F5EEE5"/>
+      <stop offset="60%"  stop-color="#E8DDD0"/>
+      <stop offset="100%" stop-color="#CEC0B0"/>
+    </linearGradient>
+    <!-- Tea liquid gradient -->
+    <linearGradient id="teaGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"   stop-color="#C87820"/>
+      <stop offset="40%"  stop-color="#A05810"/>
+      <stop offset="100%" stop-color="#6B3808"/>
+    </linearGradient>
+    <!-- Saucer gradient -->
+    <radialGradient id="saucerGrad" cx="40%" cy="35%" r="60%">
+      <stop offset="0%"   stop-color="#F0E8DC"/>
+      <stop offset="100%" stop-color="#C8BAA8"/>
+    </radialGradient>
+    <!-- Gold shimmer -->
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#E8C97A"/>
+      <stop offset="50%"  stop-color="#F5DFA0"/>
+      <stop offset="100%" stop-color="#C8A640"/>
+    </linearGradient>
+    <!-- Steam gradient -->
+    <linearGradient id="steamGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%"   stop-color="rgba(255,255,255,0.45)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0)"/>
+    </linearGradient>
+    <!-- Shadow/glow filters -->
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="10" stdDeviation="16" flood-color="#1A0800" flood-opacity="0.65"/>
+    </filter>
+    <filter id="textShadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="5" flood-color="#1A0800" flood-opacity="0.75"/>
+    </filter>
+    <filter id="glowFilter" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <!-- Subtle texture pattern -->
+    <pattern id="dotPattern" patternUnits="userSpaceOnUse" width="30" height="30" patternTransform="rotate(15)">
+      <circle cx="5"  cy="5"  r="1"   fill="rgba(200,134,10,0.06)"/>
+      <circle cx="20" cy="18" r="0.8" fill="rgba(200,134,10,0.04)"/>
+      <circle cx="15" cy="28" r="1.2" fill="rgba(200,134,10,0.05)"/>
+    </pattern>
+    <!-- Spice swirl clip path -->
+    <clipPath id="cupClip">
+      <path d="M212 185 L216 318 Q300 330 384 318 L388 185 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="400" fill="url(#bgGrad)"/>
+  <rect width="600" height="400" fill="url(#dotPattern)"/>
+  <!-- Centre warm glow -->
+  <ellipse cx="300" cy="240" rx="290" ry="200" fill="url(#centreGlow)"/>
+
+  <!-- Soft top-left and bottom-right decorative arcs -->
+  <circle cx="0"   cy="0"   r="120" fill="none" stroke="rgba(200,134,10,0.08)" stroke-width="40"/>
+  <circle cx="600" cy="400" r="150" fill="none" stroke="rgba(200,134,10,0.06)" stroke-width="50"/>
+
+  <!-- Scattered spice dots & star anise outlines for atmosphere -->
+  <g opacity="0.22">
+    <circle cx="80"  cy="160" r="4" fill="#C8860A"/>
+    <circle cx="95"  cy="175" r="2" fill="#E8A820"/>
+    <circle cx="520" cy="155" r="3" fill="#C8860A"/>
+    <circle cx="508" cy="168" r="2.5" fill="#E8A820"/>
+    <circle cx="140" cy="310" r="3" fill="#C8860A"/>
+    <circle cx="460" cy="320" r="3.5" fill="#C8860A"/>
+    <!-- Mini star anise shape (left) -->
+    <g transform="translate(75,310) rotate(20)">
+      <line x1="0" y1="-12" x2="0"  y2="12"  stroke="#C8860A" stroke-width="1.5" stroke-linecap="round"/>
+      <line x1="-12" y1="0" x2="12" y2="0"   stroke="#C8860A" stroke-width="1.5" stroke-linecap="round"/>
+      <line x1="-8" y1="-8" x2="8"  y2="8"   stroke="#C8860A" stroke-width="1.5" stroke-linecap="round"/>
+      <line x1="8"  y1="-8" x2="-8" y2="8"   stroke="#C8860A" stroke-width="1.5" stroke-linecap="round"/>
+      <circle cx="0" cy="0" r="3" fill="#E8A820"/>
+    </g>
+    <!-- Mini cinnamon stick (right) -->
+    <g transform="translate(510,310) rotate(-15)">
+      <rect x="-4" y="-18" width="8" height="36" rx="4" fill="#8B4A10" stroke="#C8720A" stroke-width="1"/>
+      <line x1="-4" y1="-8" x2="4" y2="-8" stroke="#C8720A" stroke-width="0.8" opacity="0.7"/>
+      <line x1="-4" y1="0"  x2="4" y2="0"  stroke="#C8720A" stroke-width="0.8" opacity="0.7"/>
+      <line x1="-4" y1="8"  x2="4" y2="8"  stroke="#C8720A" stroke-width="0.8" opacity="0.7"/>
+    </g>
+  </g>
+
+  <!-- === SAUCER === -->
+  <ellipse cx="300" cy="336" rx="178" ry="28" fill="rgba(0,0,0,0.3)" filter="url(#shadow)"/>
+  <ellipse cx="300" cy="322" rx="175" ry="24" fill="url(#saucerGrad)"/>
+  <!-- Saucer rim detail -->
+  <ellipse cx="300" cy="322" rx="175" ry="24" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="2"/>
+  <ellipse cx="300" cy="322" rx="155" ry="20" fill="none" stroke="rgba(0,0,0,0.1)" stroke-width="1.2"/>
+  <!-- Gold rim accent on saucer -->
+  <ellipse cx="300" cy="322" rx="175" ry="24" fill="none" stroke="url(#gold)" stroke-width="1.2" opacity="0.5"/>
+
+  <!-- === CUP BODY === -->
+  <!-- Cup shadow -->
+  <path d="M210 188 L214 320 Q300 333 386 320 L390 188 Z" fill="rgba(0,0,0,0.3)" filter="url(#shadow)"/>
+  <!-- Main cup shape (slightly tapered) -->
+  <path d="M212 185 L216 318 Q300 330 384 318 L388 185 Z" fill="url(#cupGrad)"/>
+
+  <!-- Tea liquid fill (inside cup, from ~30% down) -->
+  <path d="M220 218 L220 316 Q300 328 380 316 L380 218 Z" fill="url(#teaGrad)" clip-path="url(#cupClip)"/>
+
+  <!-- Cream/milk swirl on tea surface -->
+  <ellipse cx="300" cy="220" rx="78" ry="10" fill="#E8C8A0" opacity="0.45"/>
+  <path d="M255 220 Q280 212 300 220 Q320 228 345 220" fill="none" stroke="rgba(255,255,255,0.45)" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Saffron colour dots on tea surface -->
+  <circle cx="285" cy="219" r="5" fill="#E8A820" opacity="0.5"/>
+  <circle cx="315" cy="222" r="4" fill="#C88010" opacity="0.45"/>
+  <circle cx="300" cy="215" r="3" fill="#F0B830" opacity="0.5"/>
+
+  <!-- Cup rim -->
+  <ellipse cx="300" cy="185" rx="88" ry="14" fill="#EDE0D2"/>
+  <ellipse cx="300" cy="185" rx="88" ry="14" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="2"/>
+  <!-- Gold rim accent -->
+  <ellipse cx="300" cy="185" rx="88" ry="14" fill="none" stroke="url(#gold)" stroke-width="1.5" opacity="0.65"/>
+
+  <!-- Cup outer decoration (thin gold stripe) -->
+  <path d="M213 220 L215 228 Q300 240 385 228 L387 220 Q300 232 213 220 Z" fill="url(#gold)" opacity="0.25"/>
+
+  <!-- === CUP HANDLE === -->
+  <path d="M388 215 Q445 215 445 258 Q445 300 388 300" fill="none" stroke="#DDD0C0" stroke-width="18" stroke-linecap="round"/>
+  <path d="M388 215 Q445 215 445 258 Q445 300 388 300" fill="none" stroke="#EDE0D2" stroke-width="12" stroke-linecap="round"/>
+  <!-- Handle highlight -->
+  <path d="M392 222 Q438 222 438 258 Q438 294 392 294" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="5" stroke-linecap="round"/>
+  <!-- Handle gold accent line -->
+  <path d="M388 215 Q445 215 445 258 Q445 300 388 300" fill="none" stroke="url(#gold)" stroke-width="1.5" opacity="0.4" stroke-linecap="round"/>
+
+  <!-- Small spoon on saucer -->
+  <g transform="translate(195,328) rotate(-25)">
+    <ellipse cx="0" cy="0" rx="10" ry="6" fill="#C8B898"/>
+    <rect x="-2" y="6" width="4" height="28" rx="2" fill="#B8A888"/>
+    <ellipse cx="0" cy="0" rx="10" ry="6" fill="none" stroke="rgba(255,255,255,0.25)" stroke-width="1"/>
+  </g>
+
+  <!-- === STEAM === -->
+  <!-- Steam wisp 1 (left) -->
+  <path d="M268 182 Q260 155 268 130 Q276 105 268 80"
+        fill="none" stroke="url(#steamGrad)" stroke-width="4" stroke-linecap="round" opacity="0.55"/>
+  <!-- Steam wisp 2 (center) -->
+  <path d="M300 178 Q292 148 300 118 Q308 90 300 62"
+        fill="none" stroke="url(#steamGrad)" stroke-width="5" stroke-linecap="round" opacity="0.5"/>
+  <!-- Steam wisp 3 (right) -->
+  <path d="M332 182 Q340 152 332 125 Q324 100 332 75"
+        fill="none" stroke="url(#steamGrad)" stroke-width="4" stroke-linecap="round" opacity="0.48"/>
+  <!-- Thinner secondary wisps -->
+  <path d="M252 175 Q246 152 252 132" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M348 175 Q354 155 348 136" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Cardamom pod near cup (garnish) -->
+  <g transform="translate(432,300) rotate(35)" opacity="0.85">
+    <ellipse cx="0" cy="0" rx="6" ry="11" fill="#5A7A30" stroke="#3A5A18" stroke-width="1"/>
+    <line x1="-4" y1="-6" x2="4" y2="-6" stroke="#3A5A18" stroke-width="0.8" opacity="0.7"/>
+    <line x1="-5" y1="-2" x2="5" y2="-2" stroke="#3A5A18" stroke-width="0.8" opacity="0.7"/>
+    <line x1="-5" y1="2"  x2="5" y2="2"  stroke="#3A5A18" stroke-width="0.8" opacity="0.7"/>
+    <line x1="-4" y1="6"  x2="4" y2="6"  stroke="#3A5A18" stroke-width="0.8" opacity="0.7"/>
+  </g>
+
+  <!-- Top decorative border -->
+  <rect x="0" y="0" width="600" height="4" fill="url(#gold)" opacity="0.6"/>
+
+  <!-- Title -->
+  <text x="300" y="52" font-family="Georgia, 'Times New Roman', serif" font-size="30" font-weight="bold"
+        fill="url(#gold)" text-anchor="middle" filter="url(#textShadow)" letter-spacing="2">
+    Hyderabadi Chai
+  </text>
+
+  <!-- Subtitle -->
+  <text x="300" y="79" font-family="Georgia, serif" font-size="13" font-style="italic"
+        fill="rgba(255,255,255,0.68)" text-anchor="middle" letter-spacing="1.5">
+    Cardamom · Cinnamon · Saffron
+  </text>
+
+  <!-- Divider -->
+  <line x1="230" y1="92" x2="370" y2="92" stroke="url(#gold)" stroke-width="1" opacity="0.5"/>
+  <circle cx="300" cy="92" r="3" fill="#E8C97A" opacity="0.7"/>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="360" width="600" height="40" fill="rgba(0,0,0,0.4)"/>
+  <text x="300" y="386" font-family="Georgia, serif" font-size="12" font-weight="bold"
+        fill="rgba(232,201,122,0.88)" text-anchor="middle" letter-spacing="3">
+    ZAFRANI ZAIQA · AUTHENTIC HYDERABADI
+  </text>
+</svg>
