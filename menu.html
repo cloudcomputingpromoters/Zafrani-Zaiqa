@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu &amp; Pricing — Zafrani Zaiqa</title>
+  <meta name="description" content="Full menu and pricing for Zafrani Zaiqa. Hyderabadi Biryani, Arabian Mandi, Chicken specialties, desserts, packaged goods and more." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400&family=Lato:wght@300;400;700&family=Dancing+Script:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <nav id="navbar" class="scrolled">
+    <div class="nav-inner">
+      <a href="index.html" style="display:flex;align-items:center;gap:0.75rem;text-decoration:none;">
+        <div style="width:46px;height:46px;background:linear-gradient(135deg,#C8860A,#E8A820);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+          <span style="font-family:'Playfair Display',serif;font-weight:800;font-size:1rem;color:#fff;">ZZ</span>
+        </div>
+        <div>
+          <div class="nav-logo-text">Zafrani Zaiqa</div>
+          <div class="nav-logo-sub">Authentic Hyderabadi Cuisine</div>
+        </div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html" class="active">Menu</a></li>
+        <li><a href="catering.html">Catering</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html" class="nav-cta">Order Now</a></li>
+      </ul>
+      <button class="hamburger" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="catering.html">Catering</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html" class="mob-cta">Order Now</a>
+    </div>
+  </nav>
+
+  <!-- ===================== PAGE HERO ===================== -->
+  <div class="page-hero" style="padding-top:76px;">
+    <div class="page-hero-content">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <span style="color:var(--gold);">Menu</span>
+      </div>
+      <h1>Our Full Menu &amp; Pricing</h1>
+      <p>Authentic recipes · Freshly prepared · Tray sizes for every occasion</p>
+    </div>
+  </div>
+
+  <!-- ===================== PROMO BAR ===================== -->
+  <div style="background:linear-gradient(135deg,var(--maroon),var(--maroon-dark));text-align:center;padding:1rem 1.5rem;font-size:0.92rem;color:#fff;font-weight:600;">
+    🎉 Multi-Tray Discount: 3+ Full Trays = <strong style="color:var(--gold);">10% Off</strong> &nbsp;|&nbsp;
+    5+ Trays = <strong style="color:var(--gold);">15% Off</strong> &nbsp;|&nbsp;
+    10+ Trays = <strong style="color:var(--gold);">20% Off</strong>
+    &nbsp;&mdash;&nbsp; <a href="catering.html" style="color:var(--gold);text-decoration:underline;">View Catering Packages →</a>
+  </div>
+
+  <!-- ===================== MENU TABS ===================== -->
+  <section class="section bg-cream" style="padding-top:3rem;">
+    <div class="container">
+
+      <!-- Tab nav -->
+      <div class="menu-category-tabs">
+        <button class="tab-btn active" data-target="biryani">🍛 Biryani</button>
+        <button class="tab-btn" data-target="mandi">🥘 Mandi</button>
+        <button class="tab-btn" data-target="chicken">🍗 Chicken</button>
+        <button class="tab-btn" data-target="desserts">🍮 Desserts</button>
+        <button class="tab-btn" data-target="beverages">☕ Beverages</button>
+        <button class="tab-btn" data-target="packaged">🫙 Packaged Goods</button>
+      </div>
+
+      <!-- ---- Biryani ---- -->
+      <div class="menu-section active" id="biryani">
+        <div class="section-header animate-on-scroll" style="margin-bottom:2rem;">
+          <span class="section-tag">Dum-Cooked Perfection</span>
+          <h2 class="section-title">Hyderabadi Biryani</h2>
+          <div class="divider-ornament"><div class="ornament-dot"></div></div>
+          <p class="section-subtitle" style="margin:0 auto;">
+            Every grain of rice is infused with saffron, whole spices, and the essence of authentic Hyderabadi dum cooking.
+            Served in tray sizes with all the necessary accompaniments.
+          </p>
+        </div>
+
+        <div class="grid-2 stagger" style="align-items:start;gap:2.5rem;">
+          <!-- Card: Chicken Biryani -->
+          <div class="food-card">
+            <div class="food-card-img-wrap">
+              <img class="food-card-img" src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=700&q=80" alt="Hyderabadi Chicken Biryani" loading="lazy" style="height:260px;" />
+              <span class="food-card-badge">Bestseller</span>
+            </div>
+            <div class="food-card-body">
+              <h3>Hyderabadi Chicken Biryani</h3>
+              <p>Traditional dum biryani with bone-in chicken, layered with fragrant basmati, saffron milk, fried onions, fresh mint, and a medley of whole spices. Served with raita and salan.</p>
+              <div style="margin:0.75rem 0;">
+                <div style="font-size:0.78rem;font-weight:700;color:var(--dark);letter-spacing:0.05em;text-transform:uppercase;margin-bottom:0.6rem;">Tray Sizes &amp; Pricing</div>
+                <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:0.5rem;">
+                  <div style="background:var(--cream);border-radius:8px;padding:0.7rem;text-align:center;border:1px solid var(--cream-dark);">
+                    <div style="font-size:0.72rem;color:var(--text-muted);margin-bottom:0.2rem;">¼ Tray</div>
+                    <div style="font-family:'Playfair Display',serif;font-weight:700;color:var(--saffron);font-size:1.1rem;">$45</div>
+                    <div style="font-size:0.68rem;color:var(--text-muted);">Serves 8–10</div>
+                  </div>
+                  <div style="background:var(--cream);border-radius:8px;padding:0.7rem;text-align:center;border:1px solid var(--cream-dark);">
+                    <div style="font-size:0.72rem;color:var(--text-muted);margin-bottom:0.2rem;">½ Tray</div>
+                    <div style="font-family:'Playfair Display',serif;font-weight:700;color:var(--saffron);font-size:1.1rem;">$80</div>
+                    <div style="font-size:0.68rem;color:var(--text-muted);">Serves 15–20</div>
+                  </div>
+                  <div style="background:linear-gradient(135deg,var(--saffron),var(--saffron-dark));border-radius:8px;padding:0.7rem;text-align:center;">
+                    <div style="font-size:0.72rem;color:rgba(255,255,255,0.85);margin-bottom:0.2rem;">Full Tray</div>
+                    <div style="font-family:'Playfair Display',serif;font-weight:700;color:#fff;font-size:1.1rem;">$145</div>
+                    <div style="font-size:0.68rem;color:rgba(255,255,255,0.75);">Serves 30–35</div>
+                  </div>
+                </div>
+              </div>
+              <a href="contact.html" class="btn-primary" style="font-size:0.88rem;width:100%;text-align:center;display:block;">Order This Dish</a>
+            </div>
+          </div>
+
+          <!-- Card: Mutton Biryani -->
+          <div class="food-card">
+            <div class="food-card-img-wrap">
+              <img class="food-card-img" src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?auto=format&fit=crop&w=700&q=80" alt="Hyderabadi Mutton Biryani" loading="lazy" style="height:260px;" />
+              <span class="food-card-badge" style="background:var(--maroon);">Premium</span>
+            </div>
+            <div class="food-card-body">
+              <h3>Hyderabadi Mutton Biryani</h3>
+              <p>Tender bone-in mutton marinated overnight in yogurt and spices, slow-cooked on dum with aged basmati, rose water, kewra, and handpounded spice blend. The crown jewel of Hyderabadi cuisine.</p>
+              <div style="margin:0.75rem 0;">
+                <div style="font-size:0.78rem;font-weight:700;color:var(--dark);letter-spacing:0.05em;text-transform:uppercase;margin-bottom:0.6rem;">Tray Sizes &amp; Pricing</div>
+                <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:0.5rem;">
+                  <div style="background:var(--cream);border-radius:8px;padding:0.7rem;text-align:center;border:1px solid var(--cream-dark);">
+                    <div style="font-size:0.72rem;color:var(--text-muted);margin-bottom:0.2rem;">¼ Tray</div>
+                    <div style="font-family:'Playfair Display',serif;font-weight:700;color:var(--saffron);font-size:1.1rem;">$65</div>
+                    <div style="font-size:0.68rem;color:var(--text-muted);">Serves 8–10</div>
+                  </div>
+                  <div style="background:var(--cream);border-radius:8px;padding:0.7rem;text-align:center;border:1px solid var(--cream-dark);">
+                    <div style="font-size:0.72rem;color:var(--text-muted);margin-bottom:0.2rem;">½ Tray</div>
+                    <div style="font-family:'Playfair Display',serif;font-weight:700;color:var(--saffron);font-size:1.1rem;">$120</div>
+                    <div style="font-size:0.68rem;color:var(--text-muted);">Serves 15–20</div>
+                  </div>
+                  <div style="background:linear-gradient(135deg,var(--saffron),var(--saffron-dark));border-radius:8px;padding:0.7rem;text-align:center;">
+                    <div style="font-size:0.72rem;color:rgba(255,255,255,0.85);margin-bottom:0.2rem;">Full Tray</div>
+                    <div style="font-family:'Playfair Display',serif;font-weight:700;color:#fff;font-size:1.1rem;">$215</div>
+                    <div style="font-size:0.68rem;color:rgba(255,255,255,0.75);">Serves 30–35</div>
+                  </div>
+                </div>
+              </div>
+              <a href="contact.html" class="btn-primary" style="font-size:0.88rem;width:100%;text-align:center;display:block;">Order This Dish</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ---- Mandi ---- -->
+      <div class="menu-section" id="mandi">
+        <div class="section-header animate-on-scroll" style="margin-bottom:2rem;">
+          <span class="section-tag">Smoke &amp; Spice</span>
+          <h2 class="section-title">Arabian Mandi</h2>
+          <div class="divider-ornament"><div class="ornament-dot"></div></div>
+          <p class="section-subtitle" style="margin:0 auto;">
+            Authentic Arabian Mandi prepared with the traditional tandoor smoking technique — juicy, fall-off-the-bone meat over fragrant Mandi rice. A feast for royalty.
+          </p>
+        </div>
+        <div class="grid-2 stagger" style="align-items:start;gap:2.5rem;">
+
+          <div class="food-card">
+            <div class="food-card-img-wrap">
+              <img class="food-card-img" src="https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=700&q=80" alt="Arabian Mandi Chicken" loading="lazy" style="height:260px;" />
+              <span class="food-card-badge" style="background:#6B4A1A;">Specialty</span>
+            </div>
+            <div class="food-card-body">
+              <h3>Arabian Mandi Chicken</h3>
+              <p>Whole chicken marinated in a blend of loomi, cardamom, saffron, and Mandi spice mix, slow-cooked over fragrant Mandi rice in a sealed pot. Served with Mandi sauce and salad.</p>
+              <div style="margin:0.75rem 0;">
+                <div style="font-size:0.78rem;font-weight:700;color:var(--dark);letter-spacing:0.05em;text-transform:uppercase;margin-bottom:0.6rem;">Tray Sizes &amp; Pricing</div>
+                <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:0.5rem;">
+                  <div style="background:var(--cream);border-radius:8px;padding:0.7rem;text-align:center;border:1px solid var(--cream-dark);">
+                    <div style="font-size:0.72rem;color:var(--text-muted);margin-bottom:0.2rem;">¼ Tray</div>
+                    <div style="font-family:'Playfair Display',serif;font-weight:700;color:var(--saffron);font-size:1.1rem;">$50</div>
+                    <div style="font-size:0.68rem;color:var(--text-muted);">Serves 8–10</div>
+                  </div>
+                  <div style="background:var(--cream);border-radius:8px;padding:0.7rem;text-align:center;border:1px solid var(--cream-dark);">
+                    <div style="font-size:0.72rem;color:var(--text-muted);margin-bottom:0.2rem;">½ Tray</div>
+                    <div style="font-family:'Playfair Display',serif;font-weight:700;color:var(--saffron);font-size:1.1rem;">$90</div>
+                    <div style="font-size:0.68rem;color:var(--text-muted);">Serves 15–20</div>
+                  </div>
+                  <div style="background:linear-gradient(135deg,var(--saffron),var(--saffron-dark));border-radius:8px;padding:0.7rem;text-align:center;">
+                    <div style="font-size:0.72rem;color:rgba(255,255,255,0.85);margin-bottom:0.2rem;">Full Tray</div>
+                    <div style="font-family:'Playfair Display',serif;font-weight:700;color:#fff;font-size:1.1rem;">$165</div>
+                    <div style="font-size:0.68rem;color:rgba(255,255,255,0.75);">Serves 30–35</div>
+                  </div>
+                </div>
+              </div>
+              <a href="contact.html" class="btn-primary" style="font-size:0.88rem;width:100%;text-align:center;display:block;">Order This Dish</a>
+            </div>
+          </div>
+
+          <div class="food-card">
+            <div class="food-card-img-wrap">
+              <img class="food-card-img" src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=700&q=80" alt="Arabian Mandi Mutton" loading="lazy" style="height:260px;" />
+              <span class="food-card-badge" style="background:var(--maroon);">Premium</span>
+            </div>
+            <div class="food-card-body">
+              <h3>Arabian Mandi Mutton</h3>
+              <p>Premium bone-in mutton leg slow-cooked with Arabian spice blends on a bed of smoky Mandi rice. Succulent, deeply aromatic, and perfect for grand occasions.</p>
+              <div style="margin:0.75rem 0;">
+                <div style="font-size:0.78rem;font-weight:700;color:var(--dark);letter-spacing:0.05em;text-transform:uppercase;margin-bottom:0.6rem;">Tray Sizes &amp; Pricing</div>
+                <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:0.5rem;">
+                  <div style="background:var(--cream);border-radius:8px;padding:0.7rem;text-align:center;border:1px solid var(--cream-dark);">
+                    <div style="font-size:0.72rem;color:var(--text-muted);margin-bottom:0.2rem;">¼ Tray</div>
+                    <div style="font-family:'Playfair Display',serif;font-weight:700;color:var(--saffron);font-size:1.1rem;">$70</div>
+                    <div style="font-size:0.68rem;color:var(--text-muted);">Serves 8–10</div>
+                  </div>
+                  <div style="background:var(--cream);border-radius:8px;padding:0.7rem;text-align:center;border:1px solid var(--cream-dark);">
+                    <div style="font-size:0.72rem;color:var(--text-muted);margin-bottom:0.2rem;">½ Tray</div>
+                    <div style="font-family:'Playfair Display',serif;font-weight:700;color:var(--saffron);font-size:1.1rem;">$130</div>
+                    <div style="font-size:0.68rem;color:var(--text-muted);">Serves 15–20</div>
+                  </div>
+                  <div style="background:linear-gradient(135deg,var(--saffron),var(--saffron-dark));border-radius:8px;padding:0.7rem;text-align:center;">
+                    <div style="font-size:0.72rem;color:rgba(255,255,255,0.85);margin-bottom:0.2rem;">Full Tray</div>
+                    <div style="font-family:'Playfair Display',serif;font-weight:700;color:#fff;font-size:1.1rem;">$240</div>
+                    <div style="font-size:0.68rem;color:rgba(255,255,255,0.75);">Serves 30–35</div>
+                  </div>
+                </div>
+              </div>
+              <a href="contact.html" class="btn-primary" style="font-size:0.88rem;width:100%;text-align:center;display:block;">Order This Dish</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ---- Chicken ---- -->
+      <div class="menu-section" id="chicken">
+        <div class="section-header animate-on-scroll" style="margin-bottom:2rem;">
+          <span class="section-tag">Bold &amp; Spiced</span>
+          <h2 class="section-title">Chicken Specialties</h2>
+          <div class="divider-ornament"><div class="ornament-dot"></div></div>
+          <p class="section-subtitle" style="margin:0 auto;">
+            Crowd-pleasing chicken dishes that pack a punch. Perfect as side trays alongside Biryani or Mandi.
+          </p>
+        </div>
+        <div class="grid-2 stagger" style="align-items:start;gap:2.5rem;">
+
+          <div class="food-card">
+            <div class="food-card-img-wrap">
+              <img class="food-card-img" src="https://images.unsplash.com/photo-1527477396000-e27163b481c2?auto=format&fit=crop&w=700&q=80" alt="Chicken 65" loading="lazy" style="height:260px;" />
+            </div>
+            <div class="food-card-body">
+              <h3>Chicken 65</h3>
+              <p>Deep-fried chicken in a vibrant spiced batter with curry leaves, green chilies, and a tangy yogurt marinade. Served with mint chutney.</p>
+              <div style="margin:0.75rem 0;">
+                <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:0.5rem;">
+                  <div style="background:var(--cream);border-radius:8px;padding:0.7rem;text-align:center;border:1px solid var(--cream-dark);">
+                    <div style="font-size:0.72rem;color:var(--text-muted);margin-bottom:0.2rem;">¼ Tray</div>
+                    <div style="font-family:'Playfair Display',serif;font-weight:700;color:var(--saffron);font-size:1.1rem;">$40</div>
+                    <div style="font-size:0.68rem;color:var(--text-muted);">Serves 8–10</div>
+                  </div>
+                  <div style="background:var(--cream);border-radius:8px;padding:0.7rem;text-align:center;border:1px solid var(--cream-dark);">
+                    <div style="font-size:0.72rem;color:var(--text-muted);margin-bottom:0.2rem;">½ Tray</div>
+                    <div style="font-family:'Playfair Display',serif;font-weight:700;color:var(--saffron);font-size:1.1rem;">$72</div>
+                    <div style="font-size:0.68rem;color:var(--text-muted);">Serves 15–20</div>
+                  </div>
+                  <div style="background:linear-gradient(135deg,var(--saffron),var(--saffron-dark));border-radius:8px;padding:0.7rem;text-align:center;">
+                    <div style="font-size:0.72rem;color:rgba(255,255,255,0.85);margin-bottom:0.2rem;">Full Tray</div>
+                    <div style="font-family:'Playfair Display',serif;font-weight:700;color:#fff;font-size:1.1rem;">$130</div>
+                    <div style="font-size:0.68rem;color:rgba(255,255,255,0.75);">Serves 30–35</div>
+                  </div>
+                </div>
+              </div>
+              <a href="contact.html" class="btn-primary" style="font-size:0.88rem;width:100%;text-align:center;display:block;">Order This Dish</a>
+            </div>
+          </div>
+
+          <div class="food-card">
+            <div class="food-card-img-wrap">
+              <img class="food-card-img" src="https://images.unsplash.com/photo-1598103442097-8b74394b95c3?auto=format&fit=crop&w=700&q=80" alt="Red Chicken — spicy tandoor-style chicken" loading="lazy" style="height:260px;" />
+            </div>
+            <div class="food-card-body">
+              <h3>Red Chicken</h3>
+              <p>Fiery tandoor-inspired red chicken coated in a robust red chili and tomato masala. Juicy on the inside with a bold, slightly smoky crust outside.</p>
+              <div style="margin:0.75rem 0;">
+                <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:0.5rem;">
+                  <div style="background:var(--cream);border-radius:8px;padding:0.7rem;text-align:center;border:1px solid var(--cream-dark);">
+                    <div style="font-size:0.72rem;color:var(--text-muted);margin-bottom:0.2rem;">¼ Tray</div>
+                    <div style="font-family:'Playfair Display',serif;font-weight:700;color:var(--saffron);font-size:1.1rem;">$40</div>
+                    <div style="font-size:0.68rem;color:var(--text-muted);">Serves 8–10</div>
+                  </div>
+                  <div style="background:var(--cream);border-radius:8px;padding:0.7rem;text-align:center;border:1px solid var(--cream-dark);">
+                    <div style="font-size:0.72rem;color:var(--text-muted);margin-bottom:0.2rem;">½ Tray</div>
+                    <div style="font-family:'Playfair Display',serif;font-weight:700;color:var(--saffron);font-size:1.1rem;">$72</div>
+                    <div style="font-size:0.68rem;color:var(--text-muted);">Serves 15–20</div>
+                  </div>
+                  <div style="background:linear-gradient(135deg,var(--saffron),var(--saffron-dark));border-radius:8px;padding:0.7rem;text-align:center;">
+                    <div style="font-size:0.72rem;color:rgba(255,255,255,0.85);margin-bottom:0.2rem;">Full Tray</div>
+                    <div style="font-family:'Playfair Display',serif;font-weight:700;color:#fff;font-size:1.1rem;">$130</div>
+                    <div style="font-size:0.68rem;color:rgba(255,255,255,0.75);">Serves 30–35</div>
+                  </div>
+                </div>
+              </div>
+              <a href="contact.html" class="btn-primary" style="font-size:0.88rem;width:100%;text-align:center;display:block;">Order This Dish</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ---- Desserts ---- -->
+      <div class="menu-section" id="desserts">
+        <div class="section-header animate-on-scroll" style="margin-bottom:2rem;">
+          <span class="section-tag">Sweet Endings</span>
+          <h2 class="section-title">Hyderabadi Desserts</h2>
+          <div class="divider-ornament"><div class="ornament-dot"></div></div>
+          <p class="section-subtitle" style="margin:0 auto;">
+            Traditional Hyderabadi mithas made from time-honored recipes passed down through generations. The perfect sweet finale to any feast.
+          </p>
+        </div>
+
+        <div class="grid-3 stagger">
+          <!-- Double ka Mittha -->
+          <div class="food-card">
+            <div class="food-card-img-wrap">
+              <img class="food-card-img" src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=600&q=80" alt="Double ka Mittha — Hyderabadi bread pudding" loading="lazy" />
+            </div>
+            <div class="food-card-body">
+              <h3>Double ka Mittha</h3>
+              <p>Fried bread soaked in saffron-infused rabri (thickened milk), topped with dry fruits and silver varq. Rich, decadent &amp; utterly indulgent.</p>
+              <div style="display:flex;gap:0.5rem;flex-wrap:wrap;margin-bottom:1rem;">
+                <span class="pill-tag">Small — $30</span>
+                <span class="pill-tag">½ Tray — $50</span>
+                <span class="pill-tag">Full Tray — $90</span>
+              </div>
+              <a href="contact.html" class="btn-primary" style="font-size:0.85rem;width:100%;text-align:center;display:block;">Order</a>
+            </div>
+          </div>
+
+          <!-- Khurbani ka Mittha -->
+          <div class="food-card">
+            <div class="food-card-img-wrap">
+              <img class="food-card-img" src="https://images.unsplash.com/photo-1488423115866-18a02bc9c4a5?auto=format&fit=crop&w=600&q=80" alt="Khurbani ka Mittha — apricot dessert" loading="lazy" />
+            </div>
+            <div class="food-card-body">
+              <h3>Khurbani ka Mittha</h3>
+              <p>Slow-cooked dried Hyderabadi apricots sweetened to perfection, topped with fresh cream and a garnish of almonds. A Hyderabadi wedding staple.</p>
+              <div style="display:flex;gap:0.5rem;flex-wrap:wrap;margin-bottom:1rem;">
+                <span class="pill-tag">Small — $28</span>
+                <span class="pill-tag">½ Tray — $48</span>
+                <span class="pill-tag">Full Tray — $85</span>
+              </div>
+              <a href="contact.html" class="btn-primary" style="font-size:0.85rem;width:100%;text-align:center;display:block;">Order</a>
+            </div>
+          </div>
+
+          <!-- Fruit ka Mittha -->
+          <div class="food-card">
+            <div class="food-card-img-wrap">
+              <img class="food-card-img" src="https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?auto=format&fit=crop&w=600&q=80" alt="Fruit ka Mittha — Hyderabadi fruit custard dessert" loading="lazy" />
+            </div>
+            <div class="food-card-body">
+              <h3>Fruit ka Mittha</h3>
+              <p>A refreshing medley of fresh seasonal fruits blended with thick saffron cream, rose water, and a hint of cardamom. Light yet indulgent.</p>
+              <div style="display:flex;gap:0.5rem;flex-wrap:wrap;margin-bottom:1rem;">
+                <span class="pill-tag">Small — $32</span>
+                <span class="pill-tag">½ Tray — $55</span>
+                <span class="pill-tag">Full Tray — $95</span>
+              </div>
+              <a href="contact.html" class="btn-primary" style="font-size:0.85rem;width:100%;text-align:center;display:block;">Order</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ---- Beverages ---- -->
+      <div class="menu-section" id="beverages">
+        <div class="section-header animate-on-scroll" style="margin-bottom:2rem;">
+          <span class="section-tag">Sip &amp; Savor</span>
+          <h2 class="section-title">Hyderabadi Chai</h2>
+          <div class="divider-ornament"><div class="ornament-dot"></div></div>
+        </div>
+        <div style="max-width:600px;margin:0 auto;">
+          <div class="food-card">
+            <div class="food-card-img-wrap">
+              <img class="food-card-img" src="https://images.unsplash.com/photo-1571934811356-5cc061b6d372?auto=format&fit=crop&w=700&q=80" alt="Hyderabadi Chai — fragrant spiced tea" loading="lazy" style="height:280px;" />
+              <span class="food-card-badge">Freshly Brewed</span>
+            </div>
+            <div class="food-card-body">
+              <h3>Hyderabadi Irani Chai</h3>
+              <p>Thick, creamy Hyderabadi Irani chai brewed with Assam tea, full-fat milk, and an aromatic blend of cardamom, cinnamon, cloves, and ginger. Perfectly balanced — not too sweet, not too strong. Ideal for large gatherings.</p>
+              <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:0.75rem;margin:1rem 0;">
+                <div style="background:var(--cream);border-radius:8px;padding:0.85rem;text-align:center;border:1px solid var(--cream-dark);">
+                  <div style="font-size:0.72rem;color:var(--text-muted);margin-bottom:0.2rem;">1 Gallon</div>
+                  <div style="font-family:'Playfair Display',serif;font-weight:700;color:var(--saffron);font-size:1.2rem;">$15</div>
+                  <div style="font-size:0.68rem;color:var(--text-muted);">~8 cups</div>
+                </div>
+                <div style="background:var(--cream);border-radius:8px;padding:0.85rem;text-align:center;border:1px solid var(--cream-dark);">
+                  <div style="font-size:0.72rem;color:var(--text-muted);margin-bottom:0.2rem;">2 Gallons</div>
+                  <div style="font-family:'Playfair Display',serif;font-weight:700;color:var(--saffron);font-size:1.2rem;">$27</div>
+                  <div style="font-size:0.68rem;color:var(--text-muted);">~16 cups</div>
+                </div>
+                <div style="background:linear-gradient(135deg,var(--saffron),var(--saffron-dark));border-radius:8px;padding:0.85rem;text-align:center;">
+                  <div style="font-size:0.72rem;color:rgba(255,255,255,0.85);margin-bottom:0.2rem;">5 Gallons</div>
+                  <div style="font-family:'Playfair Display',serif;font-weight:700;color:#fff;font-size:1.2rem;">$60</div>
+                  <div style="font-size:0.68rem;color:rgba(255,255,255,0.75);">~40 cups</div>
+                </div>
+              </div>
+              <a href="contact.html" class="btn-primary" style="font-size:0.88rem;width:100%;text-align:center;display:block;">Order Chai</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ---- Packaged Goods ---- -->
+      <div class="menu-section" id="packaged">
+        <div class="section-header animate-on-scroll" style="margin-bottom:2rem;">
+          <span class="section-tag">From Our Kitchen to Yours</span>
+          <h2 class="section-title">Handcrafted Packaged Goods</h2>
+          <div class="divider-ornament"><div class="ornament-dot"></div></div>
+          <p class="section-subtitle" style="margin:0 auto;">
+            Bring the authentic flavors of Zafrani Zaiqa into your everyday cooking. No preservatives, no shortcuts — made the traditional way.
+          </p>
+        </div>
+
+        <div class="grid-2 stagger" style="max-width:800px;margin:0 auto;">
+          <div class="food-card">
+            <div class="food-card-img-wrap">
+              <img class="food-card-img" src="https://images.unsplash.com/photo-1615485500704-8e990f9900f7?auto=format&fit=crop&w=600&q=80" alt="Homemade Ginger Garlic Paste jars" loading="lazy" />
+              <span class="food-card-badge">No Preservatives</span>
+            </div>
+            <div class="food-card-body">
+              <h3>Homemade Ginger Garlic Paste</h3>
+              <p>Freshly stone-ground ginger and garlic in the perfect ratio. The cornerstone of South Asian cooking, made the traditional way with no artificial additives.</p>
+              <table style="width:100%;margin:0.75rem 0;font-size:0.88rem;border-collapse:collapse;">
+                <thead>
+                  <tr style="background:var(--dark);color:var(--gold);">
+                    <th style="padding:0.5rem 0.75rem;text-align:left;font-size:0.78rem;font-weight:600;">Size</th>
+                    <th style="padding:0.5rem 0.75rem;text-align:left;font-size:0.78rem;font-weight:600;">Weight</th>
+                    <th style="padding:0.5rem 0.75rem;text-align:right;font-size:0.78rem;font-weight:600;">Price</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr style="border-bottom:1px solid var(--cream-dark);">
+                    <td style="padding:0.5rem 0.75rem;font-weight:600;">Small Jar</td>
+                    <td style="padding:0.5rem 0.75rem;color:var(--text-muted);">8 oz</td>
+                    <td style="padding:0.5rem 0.75rem;text-align:right;font-family:'Playfair Display',serif;font-weight:700;color:var(--saffron);">$7.99</td>
+                  </tr>
+                  <tr style="border-bottom:1px solid var(--cream-dark);">
+                    <td style="padding:0.5rem 0.75rem;font-weight:600;">Medium Jar</td>
+                    <td style="padding:0.5rem 0.75rem;color:var(--text-muted);">16 oz</td>
+                    <td style="padding:0.5rem 0.75rem;text-align:right;font-family:'Playfair Display',serif;font-weight:700;color:var(--saffron);">$13.99</td>
+                  </tr>
+                  <tr>
+                    <td style="padding:0.5rem 0.75rem;font-weight:600;">Large Jar</td>
+                    <td style="padding:0.5rem 0.75rem;color:var(--text-muted);">32 oz</td>
+                    <td style="padding:0.5rem 0.75rem;text-align:right;font-family:'Playfair Display',serif;font-weight:700;color:var(--saffron);">$22.99</td>
+                  </tr>
+                </tbody>
+              </table>
+              <a href="contact.html" class="btn-primary" style="font-size:0.85rem;width:100%;text-align:center;display:block;">Order a Jar</a>
+            </div>
+          </div>
+
+          <div class="food-card">
+            <div class="food-card-img-wrap">
+              <img class="food-card-img" src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=600&q=80" alt="Homemade Beef Pickle in jars" loading="lazy" />
+              <span class="food-card-badge" style="background:var(--maroon);">House Recipe</span>
+            </div>
+            <div class="food-card-body">
+              <h3>Homemade Beef Pickle (Achaar)</h3>
+              <p>A deeply flavored beef achaar made with premium halal beef, mustard oil, and a secret blend of pickling spices. Slow-cured for rich depth of flavor. A family recipe worth savoring.</p>
+              <table style="width:100%;margin:0.75rem 0;font-size:0.88rem;border-collapse:collapse;">
+                <thead>
+                  <tr style="background:var(--dark);color:var(--gold);">
+                    <th style="padding:0.5rem 0.75rem;text-align:left;font-size:0.78rem;font-weight:600;">Size</th>
+                    <th style="padding:0.5rem 0.75rem;text-align:left;font-size:0.78rem;font-weight:600;">Weight</th>
+                    <th style="padding:0.5rem 0.75rem;text-align:right;font-size:0.78rem;font-weight:600;">Price</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr style="border-bottom:1px solid var(--cream-dark);">
+                    <td style="padding:0.5rem 0.75rem;font-weight:600;">Small Jar</td>
+                    <td style="padding:0.5rem 0.75rem;color:var(--text-muted);">8 oz</td>
+                    <td style="padding:0.5rem 0.75rem;text-align:right;font-family:'Playfair Display',serif;font-weight:700;color:var(--saffron);">$9.99</td>
+                  </tr>
+                  <tr style="border-bottom:1px solid var(--cream-dark);">
+                    <td style="padding:0.5rem 0.75rem;font-weight:600;">Medium Jar</td>
+                    <td style="padding:0.5rem 0.75rem;color:var(--text-muted);">16 oz</td>
+                    <td style="padding:0.5rem 0.75rem;text-align:right;font-family:'Playfair Display',serif;font-weight:700;color:var(--saffron);">$17.99</td>
+                  </tr>
+                  <tr>
+                    <td style="padding:0.5rem 0.75rem;font-weight:600;">Large Jar</td>
+                    <td style="padding:0.5rem 0.75rem;color:var(--text-muted);">32 oz</td>
+                    <td style="padding:0.5rem 0.75rem;text-align:right;font-family:'Playfair Display',serif;font-weight:700;color:var(--saffron);">$31.99</td>
+                  </tr>
+                </tbody>
+              </table>
+              <a href="contact.html" class="btn-primary" style="font-size:0.85rem;width:100%;text-align:center;display:block;">Order a Jar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /container -->
+  </section>
+
+  <!-- ===================== PRICING QUICK-REFERENCE ===================== -->
+  <section class="section bg-white">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-tag">Quick Reference</span>
+        <h2 class="section-title">Complete Pricing Chart</h2>
+        <div class="divider-ornament"><div class="ornament-dot"></div></div>
+      </div>
+
+      <div style="overflow-x:auto;" class="animate-on-scroll">
+        <table class="pricing-table">
+          <thead>
+            <tr>
+              <th>Dish</th>
+              <th>¼ Tray (8–10)</th>
+              <th>½ Tray (15–20)</th>
+              <th>Full Tray (30–35)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="category-row"><td colspan="4">🍛 Biryani</td></tr>
+            <tr><td>Hyderabadi Chicken Biryani</td><td class="price">$45</td><td class="price">$80</td><td class="price">$145</td></tr>
+            <tr><td>Hyderabadi Mutton Biryani</td><td class="price">$65</td><td class="price">$120</td><td class="price">$215</td></tr>
+            <tr class="category-row"><td colspan="4">🥘 Arabian Mandi</td></tr>
+            <tr><td>Mandi Chicken</td><td class="price">$50</td><td class="price">$90</td><td class="price">$165</td></tr>
+            <tr><td>Mandi Mutton</td><td class="price">$70</td><td class="price">$130</td><td class="price">$240</td></tr>
+            <tr class="category-row"><td colspan="4">🍗 Chicken Specialties</td></tr>
+            <tr><td>Chicken 65</td><td class="price">$40</td><td class="price">$72</td><td class="price">$130</td></tr>
+            <tr><td>Red Chicken</td><td class="price">$40</td><td class="price">$72</td><td class="price">$130</td></tr>
+            <tr class="category-row"><td colspan="4">🍮 Desserts (Small / ½ Tray / Full Tray)</td></tr>
+            <tr><td>Double ka Mittha</td><td class="price">$30</td><td class="price">$50</td><td class="price">$90</td></tr>
+            <tr><td>Khurbani ka Mittha</td><td class="price">$28</td><td class="price">$48</td><td class="price">$85</td></tr>
+            <tr><td>Fruit ka Mittha</td><td class="price">$32</td><td class="price">$55</td><td class="price">$95</td></tr>
+            <tr class="category-row"><td colspan="4">☕ Beverages</td></tr>
+            <tr><td>Hyderabadi Chai</td><td class="price">$15 / gal</td><td class="price">$27 / 2 gal</td><td class="price">$60 / 5 gal</td></tr>
+            <tr class="category-row"><td colspan="4">🫙 Packaged Goods (8 oz / 16 oz / 32 oz)</td></tr>
+            <tr><td>Ginger Garlic Paste</td><td class="price">$7.99</td><td class="price">$13.99</td><td class="price">$22.99</td></tr>
+            <tr><td>Beef Pickle</td><td class="price">$9.99</td><td class="price">$17.99</td><td class="price">$31.99</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div style="margin-top:1.5rem;padding:1.25rem 1.5rem;background:var(--cream);border-radius:var(--radius);border-left:4px solid var(--saffron);" class="animate-on-scroll">
+        <p style="margin:0;font-size:0.88rem;color:var(--text-muted);line-height:1.7;">
+          <strong style="color:var(--dark);">Notes:</strong> All prices are subject to change. Serving sizes are estimates. Minimum 48-hour advance notice required for catering orders.
+          Multi-tray discounts apply to Full Tray orders only: 3+ trays = 10% off, 5+ trays = 15% off, 10+ trays = 20% off.
+          <a href="contact.html" style="color:var(--saffron);font-weight:600;">Contact us</a> for custom quotes on larger events.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div>
+          <div class="footer-logo-text">Zafrani Zaiqa</div>
+          <div class="footer-logo-sub">Authentic Hyderabadi Cuisine</div>
+        </div>
+        <p>A home-based catering kitchen bringing the authentic tastes of Hyderabad to your table. Every dish made with love, saffron, and generations of culinary heritage.</p>
+        <div class="social-links">
+          <a href="#" class="social-link" aria-label="Facebook">f</a>
+          <a href="#" class="social-link" aria-label="Instagram">in</a>
+          <a href="#" class="social-link" aria-label="WhatsApp">W</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Quick Links</h5>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Full Menu</a></li>
+          <li><a href="catering.html">Catering</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact / Order</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>On The Menu</h5>
+        <ul class="footer-links">
+          <li><a href="#biryani" onclick="document.querySelector('[data-target=biryani]').click()">Hyderabadi Biryani</a></li>
+          <li><a href="#mandi" onclick="document.querySelector('[data-target=mandi]').click()">Arabian Mandi</a></li>
+          <li><a href="#chicken" onclick="document.querySelector('[data-target=chicken]').click()">Chicken Specialties</a></li>
+          <li><a href="#desserts" onclick="document.querySelector('[data-target=desserts]').click()">Hyderabadi Desserts</a></li>
+          <li><a href="#packaged" onclick="document.querySelector('[data-target=packaged]').click()">Packaged Goods</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Get In Touch</h5>
+        <ul class="footer-links" style="gap:0.9rem;">
+          <li><span style="color:var(--gold);margin-right:0.4rem;">📞</span><a href="tel:+15550001234">216-260-5930</a></li>
+          <li><span style="color:var(--gold);margin-right:0.4rem;">✉️</span><a href="mailto:info@zafranizaiqa.com">info@zafranizaiqa.com</a></li>
+          <li><span style="color:var(--gold);margin-right:0.4rem;">🕐</span><span style="color:rgba(255,255,255,0.55);">Mon–Sun: 10am – 8pm</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Zafrani Zaiqa. All rights reserved.</span>
+      <span>zafranizaiqa.com</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

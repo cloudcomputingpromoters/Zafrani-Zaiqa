@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact &amp; Order — Zafrani Zaiqa</title>
+  <meta name="description" content="Contact Zafrani Zaiqa to place a catering order, request a home delivery, or enquire about our packaged goods. We respond within 24 hours." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400&family=Lato:wght@300;400;700&family=Dancing+Script:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <nav id="navbar" class="scrolled">
+    <div class="nav-inner">
+      <a href="index.html" style="display:flex;align-items:center;gap:0.75rem;text-decoration:none;">
+        <div style="width:46px;height:46px;background:linear-gradient(135deg,#C8860A,#E8A820);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+          <span style="font-family:'Playfair Display',serif;font-weight:800;font-size:1rem;color:#fff;">ZZ</span>
+        </div>
+        <div>
+          <div class="nav-logo-text">Zafrani Zaiqa</div>
+          <div class="nav-logo-sub">Authentic Hyderabadi Cuisine</div>
+        </div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="catering.html">Catering</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html" class="nav-cta active">Order Now</a></li>
+      </ul>
+      <button class="hamburger" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="catering.html">Catering</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html" class="mob-cta">Order Now</a>
+    </div>
+  </nav>
+
+  <!-- ===================== PAGE HERO ===================== -->
+  <div class="page-hero" style="padding-top:76px;">
+    <div class="page-hero-content">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <span style="color:var(--gold);">Contact &amp; Order</span>
+      </div>
+      <h1>Place an Order</h1>
+      <p>Catering requests, delivery orders, or general enquiries — we're here to help</p>
+    </div>
+  </div>
+
+  <!-- ===================== CONTACT CONTENT ===================== -->
+  <section class="section bg-cream">
+    <div class="container">
+      <div style="display:grid;grid-template-columns:1.5fr 1fr;gap:3rem;align-items:start;" id="contactGrid">
+
+        <!-- ---- ORDER FORM ---- -->
+        <div class="animate-on-scroll">
+          <div style="background:var(--white);border-radius:var(--radius-lg);padding:2.5rem;box-shadow:var(--shadow-card);">
+            <span class="section-tag" style="margin-bottom:0.5rem;">Send Us a Message</span>
+            <h2 style="font-family:'Playfair Display',serif;font-size:1.6rem;font-weight:700;color:var(--dark);margin:0 0 0.25rem;">Order Request &amp; Enquiries</h2>
+            <p style="font-size:0.88rem;color:var(--text-muted);margin:0 0 2rem;">We'll get back to you within 24 hours. For urgent orders, please call us directly.</p>
+
+            <form id="contactForm" novalidate>
+              <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;">
+                <div class="form-group">
+                  <label class="form-label" for="firstName">First Name *</label>
+                  <input class="form-control" type="text" id="firstName" name="firstName" placeholder="Your first name" required />
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="lastName">Last Name *</label>
+                  <input class="form-control" type="text" id="lastName" name="lastName" placeholder="Your last name" required />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="phone">Phone Number *</label>
+                <input class="form-control" type="tel" id="phone" name="phone" placeholder="(555) 000-0000" required />
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="email">Email Address</label>
+                <input class="form-control" type="email" id="email" name="email" placeholder="your@email.com" />
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="orderType">Order Type *</label>
+                <select class="form-control" id="orderType" name="orderType" required>
+                  <option value="">— Select order type —</option>
+                  <option value="catering">Catering Order (Trays)</option>
+                  <option value="delivery">Home Delivery</option>
+                  <option value="packaged">Packaged Goods (Jars)</option>
+                  <option value="quote">Request a Custom Quote</option>
+                  <option value="general">General Enquiry</option>
+                </select>
+              </div>
+
+              <div class="form-group" id="eventDateGroup">
+                <label class="form-label" for="eventDate">Event / Delivery Date</label>
+                <input class="form-control" type="date" id="eventDate" name="eventDate" />
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="guestCount">Approximate Guest Count</label>
+                <input class="form-control" type="number" id="guestCount" name="guestCount" placeholder="e.g., 50" min="1" />
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="message">Order Details / Message *</label>
+                <textarea class="form-control" id="message" name="message" rows="5"
+                  placeholder="Please list the dishes you'd like to order and their tray sizes. E.g.: 2x Full Tray Chicken Biryani, 1x Full Tray Mandi Chicken, 1x Full Tray Double ka Mittha..." required></textarea>
+              </div>
+
+              <!-- Discount reminder -->
+              <div style="background:linear-gradient(135deg,var(--maroon),var(--maroon-dark));border-radius:var(--radius);padding:0.9rem 1.1rem;margin-bottom:1.5rem;display:flex;align-items:center;gap:0.75rem;">
+                <span style="font-size:1.3rem;flex-shrink:0;">🎉</span>
+                <p style="margin:0;font-size:0.82rem;color:rgba(255,255,255,0.9);line-height:1.5;">
+                  <strong style="color:var(--gold);">Reminder:</strong> Order 3+ Full Trays for 10% off · 5+ Trays = 15% off · 10+ Trays = 20% off.
+                  Mention your discount tier in the message above!
+                </p>
+              </div>
+
+              <button type="submit" class="btn-primary" style="width:100%;font-size:1rem;padding:1rem;">
+                Send Order Request →
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- ---- CONTACT INFO ---- -->
+        <div style="display:flex;flex-direction:column;gap:1.25rem;" class="animate-on-scroll">
+
+          <div class="info-card">
+            <div class="info-icon">📞</div>
+            <div>
+              <h4>Call or WhatsApp</h4>
+              <p>
+                <a href="tel:+15550001234">216-260-5930</a><br />
+                <span style="font-size:0.8rem;">Available Mon–Sun, 10am–8pm</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <div class="info-icon">✉️</div>
+            <div>
+              <h4>Email Us</h4>
+              <p>
+                <a href="mailto:info@zafranizaiqa.com">info@zafranizaiqa.com</a><br />
+                <span style="font-size:0.8rem;">We respond within 24 hours</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <div class="info-icon">🕐</div>
+            <div>
+              <h4>Business Hours</h4>
+              <p>
+                Monday – Friday: 10am – 8pm<br />
+                Saturday: 9am – 9pm<br />
+                Sunday: 11am – 7pm
+              </p>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <div class="info-icon">🚚</div>
+            <div>
+              <h4>Delivery &amp; Service Area</h4>
+              <p>
+                Home delivery available. Contact us to confirm availability for your area.<br />
+                Free delivery on orders over $150.
+              </p>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <div class="info-icon">⏰</div>
+            <div>
+              <h4>Order Lead Time</h4>
+              <p>
+                <strong style="color:var(--saffron);">Catering:</strong> Minimum 48-hour advance notice<br />
+                <strong style="color:var(--saffron);">Delivery:</strong> Same-day available (call to confirm)<br />
+                <strong style="color:var(--saffron);">Jars:</strong> 24-hour notice
+              </p>
+            </div>
+          </div>
+
+          <!-- Quick policy box -->
+          <div style="background:linear-gradient(135deg,var(--dark),var(--dark-800));border-radius:var(--radius-lg);padding:1.5rem;">
+            <h4 style="font-family:'Playfair Display',serif;font-weight:700;color:var(--gold);font-size:0.95rem;margin:0 0 1rem;">Order &amp; Payment Policy</h4>
+            <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:0.6rem;">
+              <li style="font-size:0.83rem;color:rgba(255,255,255,0.65);display:flex;gap:0.5rem;"><span style="color:var(--saffron-light);flex-shrink:0;">✓</span>50% deposit required to confirm order</li>
+              <li style="font-size:0.83rem;color:rgba(255,255,255,0.65);display:flex;gap:0.5rem;"><span style="color:var(--saffron-light);flex-shrink:0;">✓</span>Remaining balance due on delivery</li>
+              <li style="font-size:0.83rem;color:rgba(255,255,255,0.65);display:flex;gap:0.5rem;"><span style="color:var(--saffron-light);flex-shrink:0;">✓</span>We accept cash, Zelle &amp; Venmo</li>
+              <li style="font-size:0.83rem;color:rgba(255,255,255,0.65);display:flex;gap:0.5rem;"><span style="color:var(--saffron-light);flex-shrink:0;">✓</span>Cancellations: 24-hr notice required</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+      <style>
+        @media (max-width: 860px) {
+          #contactGrid { grid-template-columns: 1fr !important; }
+        }
+      </style>
+    </div>
+  </section>
+
+  <!-- ===================== FAQ ===================== -->
+  <section class="section bg-white">
+    <div class="container" style="max-width:800px;">
+      <div class="section-header animate-on-scroll">
+        <span class="section-tag">Got Questions?</span>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <div class="divider-ornament"><div class="ornament-dot"></div></div>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:0;" class="animate-on-scroll" id="faqAccordion">
+
+        <div class="faq-item" style="border-bottom:1px solid var(--cream-dark);">
+          <button onclick="toggleFaq(this)" style="width:100%;text-align:left;background:none;border:none;padding:1.25rem 0;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:1rem;">
+            <span style="font-family:'Playfair Display',serif;font-weight:600;font-size:1rem;color:var(--dark);">How far in advance should I place a catering order?</span>
+            <span class="faq-arrow" style="color:var(--saffron);font-size:1.2rem;flex-shrink:0;transition:transform 0.3s;">▾</span>
+          </button>
+          <div class="faq-body" style="overflow:hidden;max-height:0;transition:max-height 0.35s ease;">
+            <p style="color:var(--text-muted);font-size:0.92rem;line-height:1.7;padding-bottom:1.25rem;margin:0;">We require a minimum of <strong>48 hours advance notice</strong> for all catering tray orders. For large orders (10+ trays) or events during peak seasons (Eid, Ramadan, weddings), we recommend placing your order at least 1 week in advance to guarantee availability.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" style="border-bottom:1px solid var(--cream-dark);">
+          <button onclick="toggleFaq(this)" style="width:100%;text-align:left;background:none;border:none;padding:1.25rem 0;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:1rem;">
+            <span style="font-family:'Playfair Display',serif;font-weight:600;font-size:1rem;color:var(--dark);">What is the multi-tray discount and how does it work?</span>
+            <span class="faq-arrow" style="color:var(--saffron);font-size:1.2rem;flex-shrink:0;transition:transform 0.3s;">▾</span>
+          </button>
+          <div class="faq-body" style="overflow:hidden;max-height:0;transition:max-height 0.35s ease;">
+            <p style="color:var(--text-muted);font-size:0.92rem;line-height:1.7;padding-bottom:1.25rem;margin:0;">Our multi-tray discount applies to <strong>Full Tray</strong> orders: order 3–4 full trays and save 10%, order 5–9 full trays and save 15%, order 10+ full trays and save 20%. Simply mention your order size when you submit your request and we'll apply the discount to your quote.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" style="border-bottom:1px solid var(--cream-dark);">
+          <button onclick="toggleFaq(this)" style="width:100%;text-align:left;background:none;border:none;padding:1.25rem 0;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:1rem;">
+            <span style="font-family:'Playfair Display',serif;font-weight:600;font-size:1rem;color:var(--dark);">Do you deliver? What is the delivery fee?</span>
+            <span class="faq-arrow" style="color:var(--saffron);font-size:1.2rem;flex-shrink:0;transition:transform 0.3s;">▾</span>
+          </button>
+          <div class="faq-body" style="overflow:hidden;max-height:0;transition:max-height 0.35s ease;">
+            <p style="color:var(--text-muted);font-size:0.92rem;line-height:1.7;padding-bottom:1.25rem;margin:0;">Yes! We offer home delivery within our service area. <strong>Free delivery</strong> is available on orders over $150. For smaller orders or extended delivery areas, a delivery fee may apply. Contact us to confirm availability for your specific address.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" style="border-bottom:1px solid var(--cream-dark);">
+          <button onclick="toggleFaq(this)" style="width:100%;text-align:left;background:none;border:none;padding:1.25rem 0;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:1rem;">
+            <span style="font-family:'Playfair Display',serif;font-weight:600;font-size:1rem;color:var(--dark);">Is all food halal?</span>
+            <span class="faq-arrow" style="color:var(--saffron);font-size:1.2rem;flex-shrink:0;transition:transform 0.3s;">▾</span>
+          </button>
+          <div class="faq-body" style="overflow:hidden;max-height:0;transition:max-height 0.35s ease;">
+            <p style="color:var(--text-muted);font-size:0.92rem;line-height:1.7;padding-bottom:1.25rem;margin:0;">Yes. <strong>100% halal</strong>. Every meat — chicken, mutton, and beef — is sourced from certified halal suppliers. This is a non-negotiable part of our values and commitment to our community.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" style="border-bottom:1px solid var(--cream-dark);">
+          <button onclick="toggleFaq(this)" style="width:100%;text-align:left;background:none;border:none;padding:1.25rem 0;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:1rem;">
+            <span style="font-family:'Playfair Display',serif;font-weight:600;font-size:1rem;color:var(--dark);">Can I customize the spice level?</span>
+            <span class="faq-arrow" style="color:var(--saffron);font-size:1.2rem;flex-shrink:0;transition:transform 0.3s;">▾</span>
+          </button>
+          <div class="faq-body" style="overflow:hidden;max-height:0;transition:max-height 0.35s ease;">
+            <p style="color:var(--text-muted);font-size:0.92rem;line-height:1.7;padding-bottom:1.25rem;margin:0;">Absolutely. We can accommodate mild, medium, or spicy preparations. Just let us know your preference when placing your order and we'll cook it to your taste.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button onclick="toggleFaq(this)" style="width:100%;text-align:left;background:none;border:none;padding:1.25rem 0;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:1rem;">
+            <span style="font-family:'Playfair Display',serif;font-weight:600;font-size:1rem;color:var(--dark);">What payment methods do you accept?</span>
+            <span class="faq-arrow" style="color:var(--saffron);font-size:1.2rem;flex-shrink:0;transition:transform 0.3s;">▾</span>
+          </button>
+          <div class="faq-body" style="overflow:hidden;max-height:0;transition:max-height 0.35s ease;">
+            <p style="color:var(--text-muted);font-size:0.92rem;line-height:1.7;padding-bottom:1.25rem;margin:0;">We currently accept <strong>Cash</strong>, <strong>Zelle</strong>, and <strong>Venmo</strong>. A 50% deposit is required at the time of order confirmation, with the remaining balance due on delivery.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div>
+          <div class="footer-logo-text">Zafrani Zaiqa</div>
+          <div class="footer-logo-sub">Authentic Hyderabadi Cuisine</div>
+        </div>
+        <p>A home-based catering kitchen bringing the authentic tastes of Hyderabad to your table.</p>
+        <div class="social-links">
+          <a href="#" class="social-link" aria-label="Facebook">f</a>
+          <a href="#" class="social-link" aria-label="Instagram">in</a>
+          <a href="#" class="social-link" aria-label="WhatsApp">W</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Quick Links</h5>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Full Menu</a></li>
+          <li><a href="catering.html">Catering</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact / Order</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>On The Menu</h5>
+        <ul class="footer-links">
+          <li><a href="menu.html">Hyderabadi Biryani</a></li>
+          <li><a href="menu.html">Arabian Mandi</a></li>
+          <li><a href="menu.html">Chicken Specialties</a></li>
+          <li><a href="menu.html">Hyderabadi Desserts</a></li>
+          <li><a href="menu.html">Packaged Goods</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Get In Touch</h5>
+        <ul class="footer-links" style="gap:0.9rem;">
+          <li><span style="color:var(--gold);margin-right:0.4rem;">📞</span><a href="tel:+15550001234">216-260-5930</a></li>
+          <li><span style="color:var(--gold);margin-right:0.4rem;">✉️</span><a href="mailto:info@zafranizaiqa.com">info@zafranizaiqa.com</a></li>
+          <li><span style="color:var(--gold);margin-right:0.4rem;">🕐</span><span style="color:rgba(255,255,255,0.55);">Mon–Sun: 10am – 8pm</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Zafrani Zaiqa. All rights reserved.</span>
+      <span>zafranizaiqa.com</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    // FAQ accordion
+    function toggleFaq(btn) {
+      const body  = btn.nextElementSibling;
+      const arrow = btn.querySelector('.faq-arrow');
+      const isOpen = body.style.maxHeight && body.style.maxHeight !== '0px';
+
+      // Close all
+      document.querySelectorAll('.faq-body').forEach(b => { b.style.maxHeight = '0'; });
+      document.querySelectorAll('.faq-arrow').forEach(a => { a.style.transform = ''; });
+
+      if (!isOpen) {
+        body.style.maxHeight = body.scrollHeight + 'px';
+        arrow.style.transform = 'rotate(180deg)';
+      }
+    }
+  </script>
+</body>
+</html>
