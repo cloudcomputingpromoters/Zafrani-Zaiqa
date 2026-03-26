@@ -1,0 +1,283 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <defs>
+    <!-- Deep walnut-to-maroon background -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#1A0C00"/>
+      <stop offset="45%"  stop-color="#3A1A04"/>
+      <stop offset="100%" stop-color="#5C2A08"/>
+    </linearGradient>
+    <!-- Warm amber centre glow -->
+    <radialGradient id="centreGlow" cx="50%" cy="58%" r="42%">
+      <stop offset="0%"   stop-color="#A05A10" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </radialGradient>
+    <!-- Brass/copper plate -->
+    <radialGradient id="plateGrad" cx="38%" cy="32%" r="62%">
+      <stop offset="0%"   stop-color="#C89040"/>
+      <stop offset="55%"  stop-color="#A07030"/>
+      <stop offset="100%" stop-color="#7A5018"/>
+    </radialGradient>
+    <!-- Kawab shami patty surface -->
+    <radialGradient id="kawabGrad" cx="35%" cy="30%" r="60%">
+      <stop offset="0%"   stop-color="#6B3010"/>
+      <stop offset="60%"  stop-color="#4A1E06"/>
+      <stop offset="100%" stop-color="#2E1002"/>
+    </radialGradient>
+    <!-- Kawab char/crust highlight -->
+    <radialGradient id="kawabHighlight" cx="30%" cy="25%" r="50%">
+      <stop offset="0%"   stop-color="#8B4820" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </radialGradient>
+    <!-- Gold text gradient -->
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#E8C97A"/>
+      <stop offset="50%"  stop-color="#F5DFA0"/>
+      <stop offset="100%" stop-color="#C8A640"/>
+    </linearGradient>
+    <!-- Saffron oil glisten on kawab -->
+    <radialGradient id="glistenGrad" cx="40%" cy="35%" r="45%">
+      <stop offset="0%"   stop-color="rgba(200,134,10,0.35)"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </radialGradient>
+    <!-- Filters -->
+    <filter id="plateShadow" x="-25%" y="-25%" width="150%" height="150%">
+      <feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="#0D0500" flood-opacity="0.7"/>
+    </filter>
+    <filter id="kawabShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="8" flood-color="#0D0500" flood-opacity="0.6"/>
+    </filter>
+    <filter id="textShadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="5" flood-color="#0D0500" flood-opacity="0.8"/>
+    </filter>
+    <filter id="leafShadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0D0500" flood-opacity="0.4"/>
+    </filter>
+    <!-- Spice texture pattern -->
+    <pattern id="spicePattern" patternUnits="userSpaceOnUse" width="35" height="35" patternTransform="rotate(20)">
+      <circle cx="4"  cy="4"  r="1"   fill="rgba(180,100,20,0.07)"/>
+      <circle cx="18" cy="14" r="0.8" fill="rgba(180,100,20,0.05)"/>
+      <circle cx="10" cy="26" r="1.3" fill="rgba(180,100,20,0.06)"/>
+      <circle cx="30" cy="30" r="0.9" fill="rgba(180,100,20,0.05)"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="400" fill="url(#bgGrad)"/>
+  <rect width="600" height="400" fill="url(#spicePattern)"/>
+  <!-- Centre amber glow -->
+  <ellipse cx="300" cy="240" rx="290" ry="200" fill="url(#centreGlow)"/>
+
+  <!-- Subtle decorative corner circles -->
+  <circle cx="0"   cy="0"   r="100" fill="none" stroke="rgba(180,100,20,0.1)" stroke-width="35"/>
+  <circle cx="600" cy="400" r="130" fill="none" stroke="rgba(180,100,20,0.07)" stroke-width="45"/>
+
+  <!-- Scattered spice elements: cumin seeds, coriander dots -->
+  <g opacity="0.25">
+    <!-- Cumin seed shapes (left area) -->
+    <ellipse cx="72"  cy="180" rx="5"   ry="2"   fill="#8B5A20" transform="rotate(-30,72,180)"/>
+    <ellipse cx="88"  cy="195" rx="4"   ry="1.5" fill="#A06820" transform="rotate(-20,88,195)"/>
+    <ellipse cx="60"  cy="200" rx="4.5" ry="1.8" fill="#8B5A20" transform="rotate(-40,60,200)"/>
+    <!-- Coriander dots -->
+    <circle cx="110" cy="290" r="3.5" fill="#C8860A"/>
+    <circle cx="122" cy="300" r="2.5" fill="#A06810"/>
+    <!-- Right side spices -->
+    <ellipse cx="528" cy="175" rx="5"   ry="2"   fill="#8B5A20" transform="rotate(25,528,175)"/>
+    <ellipse cx="512" cy="188" rx="4"   ry="1.5" fill="#A06820" transform="rotate(15,512,188)"/>
+    <circle cx="490" cy="295" r="3" fill="#C8860A"/>
+    <circle cx="478" cy="305" r="2" fill="#A06810"/>
+    <!-- Bay leaf (bottom left) -->
+    <ellipse cx="80" cy="330" rx="20" ry="8" fill="#4A6820" transform="rotate(-25,80,330)"/>
+    <line x1="62" y1="328" x2="98" y2="332" stroke="#3A5018" stroke-width="0.8" opacity="0.8" transform="rotate(-25,80,330)"/>
+    <!-- Cardamom pod (bottom right) -->
+    <g transform="translate(525,325) rotate(20)">
+      <ellipse cx="0" cy="0" rx="6" ry="11" fill="#5A7A30" stroke="#3A5A18" stroke-width="1"/>
+      <line x1="-4" y1="-5" x2="4" y2="-5" stroke="#3A5A18" stroke-width="0.7" opacity="0.7"/>
+      <line x1="-5" y1="0"  x2="5" y2="0"  stroke="#3A5A18" stroke-width="0.7" opacity="0.7"/>
+      <line x1="-4" y1="5"  x2="4" y2="5"  stroke="#3A5A18" stroke-width="0.7" opacity="0.7"/>
+    </g>
+  </g>
+
+  <!-- === BRASS/COPPER PLATE === -->
+  <!-- Plate shadow -->
+  <ellipse cx="300" cy="308" rx="200" ry="32" fill="rgba(0,0,0,0.5)" filter="url(#plateShadow)"/>
+  <!-- Plate body -->
+  <ellipse cx="300" cy="285" rx="198" ry="88" fill="url(#plateGrad)"/>
+  <!-- Plate rim highlight (top arc) -->
+  <ellipse cx="300" cy="285" rx="198" ry="88" fill="none" stroke="rgba(255,230,150,0.35)" stroke-width="3"/>
+  <!-- Plate inner groove ring -->
+  <ellipse cx="300" cy="285" rx="180" ry="78" fill="none" stroke="rgba(100,60,10,0.4)" stroke-width="2"/>
+  <ellipse cx="300" cy="285" rx="162" ry="70" fill="none" stroke="rgba(255,200,80,0.15)" stroke-width="1.5"/>
+  <!-- Plate base shadow (inner) -->
+  <ellipse cx="300" cy="300" rx="155" ry="62" fill="rgba(0,0,0,0.12)"/>
+
+  <!-- === SHAMI KAWAB PATTIES === -->
+
+  <!-- Patty 4 — back left (partially hidden) -->
+  <g opacity="0.75" filter="url(#kawabShadow)">
+    <ellipse cx="200" cy="264" rx="44" ry="30" fill="url(#kawabGrad)"/>
+    <ellipse cx="200" cy="264" rx="44" ry="30" fill="url(#kawabHighlight)"/>
+    <ellipse cx="200" cy="264" rx="44" ry="30" fill="url(#glistenGrad)"/>
+    <!-- Char cracks -->
+    <path d="M182 257 Q194 252 206 257 Q218 252 228 260" fill="none" stroke="#1A0800" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+    <path d="M178 265 Q192 261 208 266 Q220 261 232 268" fill="none" stroke="#1A0800" stroke-width="1.2" stroke-linecap="round" opacity="0.5"/>
+    <!-- Herb specks inside (chana dal texture) -->
+    <circle cx="193" cy="260" r="2.5" fill="#5A3A18" opacity="0.7"/>
+    <circle cx="210" cy="265" r="2"   fill="#5A3A18" opacity="0.6"/>
+    <circle cx="200" cy="270" r="1.8" fill="#5A3A18" opacity="0.65"/>
+  </g>
+
+  <!-- Patty 5 — back right (partially hidden) -->
+  <g opacity="0.75" filter="url(#kawabShadow)">
+    <ellipse cx="400" cy="260" rx="44" ry="30" fill="url(#kawabGrad)"/>
+    <ellipse cx="400" cy="260" rx="44" ry="30" fill="url(#kawabHighlight)"/>
+    <ellipse cx="400" cy="260" rx="44" ry="30" fill="url(#glistenGrad)"/>
+    <path d="M382 253 Q394 248 406 253 Q418 248 428 256" fill="none" stroke="#1A0800" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+    <path d="M378 261 Q392 257 408 262 Q420 257 432 264" fill="none" stroke="#1A0800" stroke-width="1.2" stroke-linecap="round" opacity="0.5"/>
+    <circle cx="393" cy="256" r="2.5" fill="#5A3A18" opacity="0.7"/>
+    <circle cx="410" cy="261" r="2"   fill="#5A3A18" opacity="0.6"/>
+    <circle cx="400" cy="268" r="1.8" fill="#5A3A18" opacity="0.65"/>
+  </g>
+
+  <!-- Patty 2 — mid left -->
+  <g opacity="0.92" filter="url(#kawabShadow)">
+    <ellipse cx="220" cy="292" rx="50" ry="34" fill="url(#kawabGrad)"/>
+    <ellipse cx="220" cy="292" rx="50" ry="34" fill="url(#kawabHighlight)"/>
+    <ellipse cx="220" cy="292" rx="50" ry="34" fill="url(#glistenGrad)"/>
+    <!-- Pan-fried char marks -->
+    <path d="M198 283 Q212 277 226 283 Q240 277 254 286" fill="none" stroke="#1A0800" stroke-width="2"   stroke-linecap="round" opacity="0.55"/>
+    <path d="M193 292 Q210 287 228 293 Q244 288 258 296" fill="none" stroke="#1A0800" stroke-width="1.8" stroke-linecap="round" opacity="0.45"/>
+    <path d="M196 300 Q212 296 230 301 Q246 296 256 304" fill="none" stroke="#1A0800" stroke-width="1.5" stroke-linecap="round" opacity="0.38"/>
+    <!-- Spice & herb flecks (chana dal, cilantro) -->
+    <circle cx="210" cy="285" r="3"   fill="#4A7820" opacity="0.55"/><!-- green herb -->
+    <circle cx="228" cy="290" r="2.5" fill="#6B4A18" opacity="0.65"/><!-- dal fleck -->
+    <circle cx="218" cy="298" r="2.2" fill="#4A7820" opacity="0.5"/>
+    <circle cx="234" cy="295" r="2"   fill="#6B4A18" opacity="0.6"/>
+    <!-- Surface glisten spot -->
+    <ellipse cx="207" cy="283" rx="9" ry="5" fill="rgba(255,200,80,0.18)" transform="rotate(-15,207,283)"/>
+  </g>
+
+  <!-- Patty 3 — mid right -->
+  <g opacity="0.92" filter="url(#kawabShadow)">
+    <ellipse cx="380" cy="292" rx="50" ry="34" fill="url(#kawabGrad)"/>
+    <ellipse cx="380" cy="292" rx="50" ry="34" fill="url(#kawabHighlight)"/>
+    <ellipse cx="380" cy="292" rx="50" ry="34" fill="url(#glistenGrad)"/>
+    <path d="M358 283 Q372 277 386 283 Q400 277 414 286" fill="none" stroke="#1A0800" stroke-width="2"   stroke-linecap="round" opacity="0.55"/>
+    <path d="M353 292 Q370 287 388 293 Q404 288 418 296" fill="none" stroke="#1A0800" stroke-width="1.8" stroke-linecap="round" opacity="0.45"/>
+    <path d="M356 300 Q372 296 390 301 Q406 296 416 304" fill="none" stroke="#1A0800" stroke-width="1.5" stroke-linecap="round" opacity="0.38"/>
+    <circle cx="370" cy="285" r="3"   fill="#4A7820" opacity="0.55"/>
+    <circle cx="388" cy="290" r="2.5" fill="#6B4A18" opacity="0.65"/>
+    <circle cx="378" cy="298" r="2.2" fill="#4A7820" opacity="0.5"/>
+    <circle cx="394" cy="295" r="2"   fill="#6B4A18" opacity="0.6"/>
+    <ellipse cx="367" cy="283" rx="9" ry="5" fill="rgba(255,200,80,0.18)" transform="rotate(-15,367,283)"/>
+  </g>
+
+  <!-- Patty 1 — front center (hero, largest) -->
+  <g opacity="0.98" filter="url(#kawabShadow)">
+    <ellipse cx="300" cy="308" rx="62" ry="42" fill="url(#kawabGrad)"/>
+    <ellipse cx="300" cy="308" rx="62" ry="42" fill="url(#kawabHighlight)"/>
+    <ellipse cx="300" cy="308" rx="62" ry="42" fill="url(#glistenGrad)"/>
+    <!-- Prominent char/grill marks on hero patty -->
+    <path d="M272 296 Q288 288 304 296 Q320 288 336 298" fill="none" stroke="#1A0800" stroke-width="2.5" stroke-linecap="round" opacity="0.5"/>
+    <path d="M266 306 Q284 300 302 307 Q320 300 338 309" fill="none" stroke="#1A0800" stroke-width="2.2" stroke-linecap="round" opacity="0.42"/>
+    <path d="M268 316 Q286 311 304 317 Q322 311 340 319" fill="none" stroke="#1A0800" stroke-width="2"   stroke-linecap="round" opacity="0.35"/>
+    <path d="M272 325 Q290 320 308 325 Q324 320 338 327" fill="none" stroke="#1A0800" stroke-width="1.8" stroke-linecap="round" opacity="0.28"/>
+    <!-- Herb & spice specks -->
+    <circle cx="284" cy="300" r="3.5" fill="#3A6A15" opacity="0.6"/>
+    <circle cx="305" cy="306" r="3"   fill="#6B4A18" opacity="0.7"/>
+    <circle cx="318" cy="300" r="3.2" fill="#3A6A15" opacity="0.55"/>
+    <circle cx="293" cy="313" r="2.5" fill="#6B4A18" opacity="0.65"/>
+    <circle cx="314" cy="315" r="2.5" fill="#3A6A15" opacity="0.55"/>
+    <circle cx="300" cy="321" r="2.2" fill="#6B4A18" opacity="0.6"/>
+    <!-- Shiny oil glisten (fresh off the tawa) -->
+    <ellipse cx="282" cy="296" rx="14" ry="8" fill="rgba(255,200,60,0.22)" transform="rotate(-18,282,296)"/>
+    <ellipse cx="276" cy="292" rx="6"  ry="3.5" fill="rgba(255,230,120,0.25)" transform="rotate(-18,276,292)"/>
+  </g>
+
+  <!-- === GARNISHES === -->
+
+  <!-- Onion rings (front left) -->
+  <g opacity="0.88" filter="url(#leafShadow)">
+    <!-- Outer ring -->
+    <ellipse cx="170" cy="312" rx="22" ry="10" fill="none" stroke="#E8D0B8" stroke-width="3.5" transform="rotate(-12,170,312)"/>
+    <!-- Middle ring -->
+    <ellipse cx="172" cy="313" rx="15" ry="7"  fill="none" stroke="#F0E0C8" stroke-width="2.5" transform="rotate(-12,172,313)"/>
+    <!-- Inner ring -->
+    <ellipse cx="172" cy="313" rx="8"  ry="4"  fill="none" stroke="#E8D8C0" stroke-width="2"   transform="rotate(-12,172,313)"/>
+    <!-- Purple tinge on outer rings -->
+    <ellipse cx="170" cy="312" rx="22" ry="10" fill="rgba(160,80,120,0.1)" transform="rotate(-12,170,312)"/>
+  </g>
+
+  <!-- Second onion ring (overlapping, top-left) -->
+  <g opacity="0.75" filter="url(#leafShadow)">
+    <ellipse cx="152" cy="297" rx="18" ry="8" fill="none" stroke="#DCC8B0" stroke-width="3" transform="rotate(-20,152,297)"/>
+    <ellipse cx="153" cy="298" rx="11" ry="5" fill="none" stroke="#EAD8C0" stroke-width="2" transform="rotate(-20,153,298)"/>
+    <ellipse cx="152" cy="297" rx="18" ry="8" fill="rgba(160,80,120,0.08)" transform="rotate(-20,152,297)"/>
+  </g>
+
+  <!-- Mint / cilantro sprigs (right side of plate) -->
+  <g filter="url(#leafShadow)">
+    <!-- Stem -->
+    <line x1="418" y1="318" x2="438" y2="278" stroke="#3A7020" stroke-width="2" stroke-linecap="round"/>
+    <!-- Leaf 1 -->
+    <ellipse cx="425" cy="305" rx="12" ry="5.5" fill="#4A8828" transform="rotate(40,425,305)"/>
+    <line x1="419" y1="309" x2="431" y2="301" stroke="#2A5A14" stroke-width="0.8" opacity="0.8" transform="rotate(40,425,305)"/>
+    <!-- Leaf 2 -->
+    <ellipse cx="433" cy="292" rx="11" ry="5"   fill="#52962E" transform="rotate(25,433,292)"/>
+    <line x1="427" y1="295" x2="439" y2="289" stroke="#2A5A14" stroke-width="0.8" opacity="0.8" transform="rotate(25,433,292)"/>
+    <!-- Leaf 3 (small top) -->
+    <ellipse cx="438" cy="280" rx="9"  ry="4"   fill="#4A8828" transform="rotate(10,438,280)"/>
+    <line x1="433" y1="282" x2="443" y2="278" stroke="#2A5A14" stroke-width="0.7" opacity="0.8" transform="rotate(10,438,280)"/>
+  </g>
+
+  <!-- Lemon wedge (front right) -->
+  <g opacity="0.92">
+    <path d="M430 318 Q448 304 462 318 Z" fill="#E8D030" opacity="0.9"/>
+    <path d="M430 318 Q448 332 462 318 Z" fill="#F0DD40" opacity="0.82"/>
+    <line x1="446" y1="304" x2="446" y2="332" stroke="#C8B820" stroke-width="1.2" opacity="0.55"/>
+    <!-- Lemon segments -->
+    <line x1="430" y1="318" x2="462" y2="318" stroke="#C8B820" stroke-width="0.8" opacity="0.4"/>
+    <path d="M433 311 Q446 308 459 311" fill="none" stroke="#C8B820" stroke-width="0.7" opacity="0.35"/>
+    <path d="M433 325 Q446 328 459 325" fill="none" stroke="#C8B820" stroke-width="0.7" opacity="0.35"/>
+    <!-- Lemon rind edge -->
+    <path d="M430 318 Q448 304 462 318" fill="none" stroke="#8B9A10" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+  </g>
+
+  <!-- Red chili flakes on patties for colour pop -->
+  <circle cx="245" cy="283" r="2.5" fill="#C83020" opacity="0.6"/>
+  <circle cx="355" cy="283" r="2"   fill="#C83020" opacity="0.5"/>
+  <circle cx="290" cy="295" r="2.2" fill="#E04030" opacity="0.55"/>
+  <circle cx="315" cy="318" r="2"   fill="#C83020" opacity="0.5"/>
+
+  <!-- Decorative gold top border -->
+  <rect x="0" y="0" width="600" height="4" fill="url(#gold)" opacity="0.65"/>
+
+  <!-- === TITLE TEXT === -->
+  <text x="300" y="50" font-family="Georgia, 'Times New Roman', serif" font-size="26" font-weight="bold"
+        fill="url(#gold)" text-anchor="middle" filter="url(#textShadow)" letter-spacing="1.5">
+    Beef Gosht Ke Kawab
+  </text>
+  <!-- Urdu-style sub-label -->
+  <text x="300" y="77" font-family="Georgia, serif" font-size="13" font-style="italic"
+        fill="rgba(255,255,255,0.68)" text-anchor="middle" letter-spacing="1.5">
+    Hyderabadi Shami Kawab · Handcrafted
+  </text>
+
+  <!-- Divider ornament -->
+  <line x1="220" y1="91" x2="380" y2="91" stroke="url(#gold)" stroke-width="1" opacity="0.5"/>
+  <circle cx="300" cy="91" r="3" fill="#E8C97A" opacity="0.72"/>
+  <!-- Small side diamonds -->
+  <rect x="225" y="88" width="6" height="6" fill="#E8C97A" opacity="0.4" transform="rotate(45,228,91)"/>
+  <rect x="369" y="88" width="6" height="6" fill="#E8C97A" opacity="0.4" transform="rotate(45,372,91)"/>
+
+  <!-- Descriptor tags under divider -->
+  <text x="222" y="116" font-family="Arial, sans-serif" font-size="10" fill="rgba(232,201,122,0.65)" text-anchor="middle" letter-spacing="1">HALAL</text>
+  <text x="300" y="116" font-family="Arial, sans-serif" font-size="10" fill="rgba(232,201,122,0.65)" text-anchor="middle" letter-spacing="1">HOMEMADE</text>
+  <text x="378" y="116" font-family="Arial, sans-serif" font-size="10" fill="rgba(232,201,122,0.65)" text-anchor="middle" letter-spacing="1">NO PRESERVATIVES</text>
+
+  <!-- Bottom label bar -->
+  <rect x="0" y="360" width="600" height="40" fill="rgba(0,0,0,0.45)"/>
+  <text x="300" y="386" font-family="Georgia, serif" font-size="12" font-weight="bold"
+        fill="rgba(232,201,122,0.88)" text-anchor="middle" letter-spacing="3">
+    ZAFRANI ZAIQA · AUTHENTIC HYDERABADI
+  </text>
+</svg>
